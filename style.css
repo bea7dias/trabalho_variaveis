@@ -1,0 +1,43 @@
+body {
+  font-family: Arial;
+  background: #111;
+  color: #eee;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#labirinto {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(9, 40px);
+  gap: 4px;
+  justify-self: center;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #222;
+  border-radius: 4px;
+}
+
+.parede {
+  background: #444;
+}
+
+.jogador {
+  background: #4CB7FF;
+}
+
+.objetivo {
+  background: #7DFF6C;
+}
+
